@@ -641,14 +641,6 @@ img {
 */
 
 @media (min-width: 530px) {
-  .tagline-block-text {
-    width: 23.375rem;
-  }
-
-  .mock-services-content {
-    width: 30rem;
-  }
-
   .intro-tagline {
     width: 13.5rem;
   }
@@ -658,37 +650,17 @@ img {
     font-weight: 100;
   }
 
-}
-
-@media (min-width: 1010px) {
-  .intro-tagline {
-    width: 13.5rem;
-  }
-
-  .intro-hero-content {
-    font-weight: 100;
+  .mock-services-content {
+    width: 30rem;
   }
 
   .tagline-block-text {
-    width: 33.275rem;
-    padding: 3.375rem 0;
+    width: 23.375rem;
   }
 
-  .responsive_col {
-    width: 33.3333333333%;
-  }
+}
 
-  .mock-services-content {
-    width: 20rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .mock-services-content-div {
-    margin-top: 5.625rem;
-    margin-bottom: 5.625rem;
-  }
-
+@media (min-width: 1010px) {
   .intro-hero {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('../../img/hero-img.jpg');
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('../../img/hero-img.jpg');
@@ -707,14 +679,42 @@ img {
   .intro-apple-btn {
     background-color: #c54c3b;
   }
+  .intro-tagline {
+    width: 13.5rem;
+  }
 
-  .tagline-block-content-div {
-    background-color: #000;
+  .intro-hero-content {
+    font-weight: 100;
+  }
+
+
+  .responsive_col {
+    width: 33.3333333333%;
+  }
+
+  .mock-services-content {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mock-services-content-div {
+    margin-top: 5.625rem;
+    margin-bottom: 5.625rem;
   }
 
   .mock-service-item-div {
     padding-left: 1.85rem;
     padding-right: 1.85rem;
+  }
+
+  .tagline-block-content-div {
+    background-color: #000;
+  }
+
+  .tagline-block-text {
+    width: 33.275rem;
+    padding: 3.375rem 0;
   }
 }
 
