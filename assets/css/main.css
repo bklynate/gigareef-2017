@@ -1,0 +1,287 @@
+@import 'normalize.css'; /*  Import normalize.css  */
+$mainRed: #c54c3b; /*  Color variable  */
+
+/*
+------------Start of intro hero css
+*/
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font: normal 100% Lato, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*
+------------End of general css
+*/
+
+/*
+------------Start of helper css
+*/
+.row {
+
+  /* 100 / 12 = 8.33333333333% = 1 col  */
+
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+    margin-bottom: 1rem;
+  }
+
+  &__6 {
+    float: left;
+    width: 49.99999999999998%;
+  }
+
+  &__4 {
+    float: left;
+    width: 33.3333333333%;
+  }
+
+  &__8 {
+    float: left;
+    width: 66.66666666666664%;
+  }
+
+  &__12 {
+    float: left;
+    width: 99.99999999999996%;
+  }
+}
+
+.responsive_col {
+  float: left;
+  width: 99.99999999999996%;
+}
+/*
+------------End of helper css
+*/
+
+/*
+------------Start of intro hero css
+*/
+.intro-hero-section {
+  box-shadow: 0 4px 2px -2px #bfbfbf;
+}
+
+.intro-hero {
+  background-image: linear-gradient(rgba(185, 74, 63, 0.9), rgba(185, 74, 63, 0.9)), url('../../img/hero-img.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.intro-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #fff;
+  font-size: 0.5rem;
+  text-align: center;
+  opacity: 0.8;
+  padding-top: 2rem;
+}
+
+.intro-header {
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.3rem;
+}
+
+.intro-social-media-icons {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+
+.intro-tagline {
+  text-align: center;
+  font-weight: 100;
+  color: #fff;
+  width: 12.5rem;
+  opacity: 0.6;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.intro-hero-content {
+  opacity: 0.5;
+  width: 31.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+
+.intro-btn-div {
+  width: 15.9375rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1.025rem;
+}
+
+.intro-google-btn,
+.intro-apple-btn {
+  font-size: 0.6rem;
+  width: 7.7rem;
+  border: 1px #000 solid;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+}
+
+.intro-googlePlay-btn-text,
+.intro-appleStore-btn-text {
+  font-size: 0.9rem;
+}
+
+.intro-google-btn-icon,
+.intro-apple-btn-icon {
+  font-size: 1.3rem;
+  float: left;
+  padding-left: 0.5rem;
+}
+
+/*
+------------End of intro hero css
+*/
+
+/*
+------------Start of mock services css
+*/
+.mock-services-content-div {
+  margin-top: 1.625rem;
+  text-align: center;
+}
+
+.mock-services-fake-img {
+  height: 5rem;
+  width: 5rem;
+  background-color: $mainRed;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mock-services-content {
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+------------End of mock services css
+*/
+
+/*
+------------Start of block tagline css
+*/
+.tagline-block-content-div {
+  background-color: $mainRed;
+}
+
+.tagline-block-text {
+  font-weight: 100;
+  width: 8.486rem;
+  text-align: center;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+------------End of block tagline css
+*/
+
+/*
+------------Start of media queries css
+*/
+@media (min-width: 530px) {
+  .tagline-block-text {
+    width: 23.375rem;
+  }
+
+  .mock-services-content {
+    width: 30rem;
+  }
+
+  .intro-tagline {
+    width: 13.5rem;
+  }
+
+  .intro-hero-content {
+    display: block;
+    font-weight: 100;
+  }
+
+}
+
+@media (min-width: 1010px) {
+  .intro-tagline {
+    width: 13.5rem;
+  }
+
+  .intro-hero-content {
+    font-weight: 100;
+  }
+
+  .tagline-block-text {
+    width: 33.275rem;
+    padding: 3.375rem 0;
+  }
+
+  .responsive_col {
+    width: 33.3333333333%;
+  }
+
+  .mock-services-content {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mock-services-content-div {
+    margin-top: 5.625rem;
+    margin-bottom: 5.625rem;
+  }
+
+  .intro-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url('../../img/hero-img.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 150px;
+  }
+
+  .intro-tagline,
+  .intro-hero-content {
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    opacity: .8;
+  }
+
+  .intro-google-btn,
+  .intro-apple-btn {
+    background-color: $mainRed;
+  }
+
+  .tagline-block-content-div {
+    background-color: #000;
+  }
+}
+
+/*
+------------End of media queries css
+*/
