@@ -711,6 +711,11 @@ img {
   .tagline-block-content-div {
     background-color: #000;
   }
+
+  .mock-service-item-div {
+    padding-left: 1.85rem;
+    padding-right: 1.85rem;
+  }
 }
 
 /*
